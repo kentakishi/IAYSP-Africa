@@ -26,10 +26,7 @@ df = pd.DataFrame(
 expander = st.beta_expander('Inquiry')
 expander.write('write inquiry')
 
-st.write('Display Image')
-if st.checkbox('Show image'):
-    img = Image.open('5. MAY.jpg')
-    st.image(img, caption = 'sample picture', use_column_width=True)
+
 
 st.write('Interactive widgets')
 option = st.selectbox('Choose your favorite number', list(range(1,11)))
